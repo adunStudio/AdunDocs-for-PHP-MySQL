@@ -1,8 +1,8 @@
 <?
 header("Content-Type:text/html;charset=utf-8");
 class ArticleController extends Controller {
-    private $master = 'adundocsadmin';
-    private $pattern = '123';
+    private $master = 'bananaappledocs';
+    private $pattern = '12453';
 
     function __construct() {
         parent::__construct();
