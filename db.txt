@@ -2,7 +2,7 @@ CREATE TABLE `ADUNDOCS_CATEGORY` (
 `id` int(11) NOT NULL,
   `dirName` varchar(50) NOT NULL,
   `subName` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 ALTER TABLE `ADUNDOCS_CATEGORY`
   ADD PRIMARY KEY (`id`),
@@ -12,13 +12,13 @@ ALTER TABLE `ADUNDOCS_CATEGORY`
 
 CREATE TABLE `ADUNDOCS_ARTICLE` (
 `id` int(11) NOT NULL,
-  `dirName` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
-  `subName` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
-  `fileName` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
-  `fileData` text CHARACTER SET utf8mb4 NOT NULL,
+  `dirName` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `subName` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `fileName` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `fileData` text CHARACTER SET utf8 NOT NULL,
   `btime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `mtime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 ALTER TABLE `ADUNDOCS_ARTICLE`
