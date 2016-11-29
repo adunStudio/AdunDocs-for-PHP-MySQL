@@ -1,0 +1,117 @@
+
+<div class="_static">
+
+    <h2 class="_lined-heading">Edit</h2>
+
+    <div id="write_page">
+        <form name="editForm">
+            <div class="col-xs-2" style="padding-left: 0;">
+                <div class="form-group">
+                    <label for="inputDir"><span>*</span> Directory</label><a data-toggle="modal" data-target="#dirModal" href=""><i class="fa fa-plus-square" style="float: right; margin-right: 0.5rem; line-height: inherit;" aria-hidden="true"></i></a>
+                    <select ng-model="inputDir"  ng-required="true" ng-change="selectFirst();"   name="inputDir" id="inputDir" class="form-control" >
+                        <option ng-repeat="(dirName, dirValue) in dirTree"  value="[[dirName]]">[[dirName]]</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="col-xs-2" style="padding-left: 0;">
+                <div class="form-group">
+                    <label for="inputSub"><span>*</span> SubDirectory</label><a ng-show="inputDir" data-toggle="modal" data-target="#subModal" href=""><i class="fa fa-plus-square" style="float: right; margin-right: 0.5rem; line-height: inherit;" aria-hidden="true"></i></a>
+                    <select ng-model="inputSub" ng-required="true" name="inputSub" id="inputSub" class="form-control">
+                        <option ng-repeat="subName in dirTree[inputDir]" value="[[subName]]">[[subName]]</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-xs-8" style="padding-left: 0; width: 63.7%; margin-right: 0; padding-right: 0;">
+                <div class="form-group">
+                    <label for="inputName"><span>*</span> Title</label>
+                    <input ng-model="inputName" ng-required="true" ng-pattern="nameRegExp"  ng-maxlength="100" maxlength="100" type="text" id="inputName" class="form-control" placeholder="제목을 적어주세요.">
+                </div>
+            </div>
+
+
+            <div ng-show="isLocalStorage && autoMode" class="col-xs-4" style="padding-left: 0; margin-right: 0; padding-right: 0;">
+                <div class="form-group">
+                    <label for="autoSave"> AutoSave</label>
+                    <select ng-model="inputSave" ng-change="saveLoad();" id="autoSave" class="form-control">
+                        <option value="">선택해주세요.</option>
+                        <option ng-repeat="(saveName, saveValue) in saveObject" value="[[saveValue]]">[[saveName]]</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div id="contents" >
+            </div>
+
+
+
+            <button ng-click="edit($event);" id="write_btn" type="button" class="btn btn-default">Edit</button>
+
+        </form>
+
+        <!-- Dir Modal -->
+        <div id="dirModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Make Direcotry</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label for="makeDirName">
+                            <i class="fa fa-folder" aria-hidden="true"></i> Directory Name
+                        </label>
+                        <form name="makeDirForm">
+                            <input ng-model="makeDirName" ng-required="true" ng-pattern="dirRegExp" type="text" name="makeDirName" id="makeDirName" class="form-control" maxlength="17">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div ng-messages="makeDirForm.makeDirName.$error" class="pull-left text-danger" style="font-weight: bold" role="alert">
+                            <p ng-message="required"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 디렉토리 이름을 적어주세요.</p>
+                            <p ng-message="pattern"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> \ / : * ? " < > | . 같은 문자를 사용할 수 없습니다. </p>
+                        </div>
+                        <button ng-click="makeDirectory();" type="button" class="btn btn-primary">Make</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dir Modal -->
+
+        <!-- Sub Modal -->
+        <div id="subModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"> Make Sub Direcotry</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label for="makeSubName">
+                            <i class="fa fa-folder" aria-hidden="true"></i> [[inputDir]] <i class="fa fa-angle-right" aria-hidden="true"></i> SubDirectory Name
+                        </label>
+                        <form name="makeSubForm">
+                            <input ng-model="makeSubName" ng-required="true" ng-pattern="dirRegExp" type="text" name="makeSubName" id="makeSubName" class="form-control" maxlength="17">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div ng-messages="makeSubForm.makeSubName.$error" class="pull-left text-danger" style="font-weight: bold" role="alert">
+                            <p ng-message="required"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 서브 디렉토리 이름을 적어주세요.</p>
+                            <p ng-message="pattern"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> \ / : * ? " < > | . 같은 문자를 사용할 수 없습니다. </p>
+                        </div>
+                        <button ng-click="makeSubDirectory();" type="button" class="btn btn-primary">Make</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sub Modal -->
+
+
+    </div>
+</div>
+<!--
+<option ng-repeat="(dir, dirValue) in docs" value="[[dir]]">[[dir]]</option>
+-->

@@ -1,0 +1,80 @@
+._icon-codesafer:before {
+    background-position: -9rem -11rem
+}
+._icon-trash:before {
+    background-image: url('/img/trash.png') !important;
+    background-size: 16px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+._icon-tistory:before {
+    background-image: url('/img/tistory.png') !important;
+    background-size: 16px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+._icon-adundocs:before {
+    background-image: url('/img/temp.png') !important;
+    background-size: 16px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+._icon-editormd:before {
+    background-image: url('/img/editormd.png') !important;
+    background-size: 16px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+._list-select {
+    position: absolute;
+    right: .75rem;
+    width: 8rem;
+    height: 1.5rem;
+    transition: .2s;
+    margin-top: 1px;
+    line-height: normal;
+    font-family: inherit;
+    font-size: 100%;
+    color: #333;
+    background: #EAEAEA;
+    border: 1px solid #C7C7C7;
+    border-radius: 3px
+}
+
+/*#navigation .focus {
+    background: #e5e5e5;
+    box-shadow: inset -1px 0 #d4d4d4;
+}
+#navigation .active {
+    color: #fff;
+    background: #398df0;
+    box-shadow: inset -1px 0 #196fc2
+}*/
+
+
+._login {
+    position: absolute;
+    z-index: 6;
+    right: 1px;
+    top: 3rem;
+}
+
+._mobile ._mobile-nav {
+    display: block;
+}
+
+._mobile ._path {
+    display: none;
+}
+._mobile #navigation {
+    display: none;
+    margin-top: 2.55rem;
+}
+._mobile ._sidebar-footer {
+    z-index: 100;
+}
+
+pre {
+    padding: 0;
+}
