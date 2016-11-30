@@ -61,9 +61,9 @@ AdunDocs.controller('writeCtrl', ['$scope', '$http', '$routeParams', '$location'
 
 
     var editor = $scope.editor = editormd("contents", {
-        theme: $scope.theme == '/css/style_white.css' ? 'default' : 'dark',
-        editorTheme : ($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'base16-dark',
-        previewTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'dark',
+        theme: $scope.theme == './css/style_white.css' ? 'default' : 'dark',
+        editorTheme : ($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == './css/style_white.css' ? 'default' : 'base16-dark',
+        previewTheme : $scope.theme == './css/style_white.css' ? 'default' : 'dark',
         imageUploadURL : "./article/upload",
         onfullscreen : function() {
             $scope.$container.css('z-index', '100');
@@ -101,9 +101,9 @@ AdunDocs.controller('writeCtrl', ['$scope', '$http', '$routeParams', '$location'
 
 
     $scope.$watch('theme', function() {
-        editor.setTheme($scope.theme == '/css/style_white.css' ? 'default' : 'dark');
-        editor.setEditorTheme(($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'base16-dark');
-        editor.setPreviewTheme($scope.theme == '/css/style_white.css' ? 'default' : 'dark');
+        editor.setTheme($scope.theme == './css/style_white.css' ? 'default' : 'dark');
+        editor.setEditorTheme(($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == './css/style_white.css' ? 'default' : 'base16-dark');
+        editor.setPreviewTheme($scope.theme == './css/style_white.css' ? 'default' : 'dark');
     });
 
     $scope.write = function(event) {

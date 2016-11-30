@@ -46,12 +46,12 @@ AdunDocs.controller('blogEditCtrl', ['$rootScope', '$scope', '$http', '$routePar
                 sequenceDiagram: true,
                 flowChart: true,
                 placeholder: 'AdunDocs는 MarkDown을 지원합니다...',
-                theme: $scope.theme == '/css/style_white.css' ? 'default' : 'dark',
-                editorTheme : ($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'base16-dark',
-                previewTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'dark',
+                theme: $scope.theme == './css/style_white.css' ? 'default' : 'dark',
+                editorTheme : ($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == './css/style_white.css' ? 'default' : 'base16-dark',
+                previewTheme : $scope.theme == './css/style_white.css' ? 'default' : 'dark',
                 imageUpload    : true,
                 imageFormats   : ["jpg", "jpeg", "gif", "png", "bmp", "PNG", 'JPG'],
-                imageUploadURL : "/tistory/media/index.php",
+                imageUploadURL : "http://www.oppacoding.com/adundocs/media/index.php",
                 onfullscreen : function() {
                     $scope.$container.css('z-index', '100');
                 },
@@ -60,7 +60,7 @@ AdunDocs.controller('blogEditCtrl', ['$rootScope', '$scope', '$http', '$routePar
                 },
                 onchange: function() {
                     $('img').on('error', function() {
-                        $(this).attr('src', "/img/tistory_404.png");
+                        $(this).attr('src', "./img/tistory_404.png");
                     });
                 },
                 onload: function() {
@@ -95,9 +95,9 @@ AdunDocs.controller('blogEditCtrl', ['$rootScope', '$scope', '$http', '$routePar
             });
 
             $scope.$watch('theme', function() {
-                editor.setTheme($scope.theme == '/css/style_white.css' ? 'default' : 'dark');
-                editor.setEditorTheme(($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'base16-dark');
-                editor.setPreviewTheme($scope.theme == '/css/style_white.css' ? 'default' : 'dark');
+                editor.setTheme($scope.theme == './css/style_white.css' ? 'default' : 'dark');
+                editor.setEditorTheme(($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == './css/style_white.css' ? 'default' : 'base16-dark');
+                editor.setPreviewTheme($scope.theme == './css/style_white.css' ? 'default' : 'dark');
             });
         }
         else

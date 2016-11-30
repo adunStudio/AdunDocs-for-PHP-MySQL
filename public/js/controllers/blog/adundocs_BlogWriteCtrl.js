@@ -42,9 +42,9 @@ AdunDocs.controller('BlogWriteCtrl', ['$scope', '$http', '$routeParams', '$timeo
             sequenceDiagram: true,
             flowChart: true,
             placeholder: 'AdunDocs는 MarkDown을 지원합니다...',
-            theme: $scope.theme == '/css/style_white.css' ? 'default' : 'dark',
-            editorTheme : ($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'base16-dark',
-            previewTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'dark',
+            theme: $scope.theme == './css/style_white.css' ? 'default' : 'dark',
+            editorTheme : ($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == './css/style_white.css' ? 'default' : 'base16-dark',
+            previewTheme : $scope.theme == './css/style_white.css' ? 'default' : 'dark',
             imageUpload    : true,
             imageFormats   : ["jpg", "jpeg", "gif", "png", "bmp", "PNG", "JPG"],
 
@@ -88,9 +88,9 @@ AdunDocs.controller('BlogWriteCtrl', ['$scope', '$http', '$routeParams', '$timeo
         });
 
         $scope.$watch('theme', function() {
-            editor.setTheme($scope.theme == '/css/style_white.css' ? 'default' : 'dark');
-            editor.setEditorTheme(($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == '/css/style_white.css' ? 'default' : 'base16-dark');
-            editor.setPreviewTheme($scope.theme == '/css/style_white.css' ? 'default' : 'dark');
+            editor.setTheme($scope.theme == './css/style_white.css' ? 'default' : 'dark');
+            editor.setEditorTheme(($scope.editorTheme != "default") ? $scope.editorTheme : $scope.theme == './css/style_white.css' ? 'default' : 'base16-dark');
+            editor.setPreviewTheme($scope.theme == './css/style_white.css' ? 'default' : 'dark');
         });
     }
     else

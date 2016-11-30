@@ -40,7 +40,7 @@ AdunDocs.controller('BlogViewCtrl', ['$rootScope', '$scope', '$http', '$routePar
             $scope.setBlogStat(data.dateCreated, data.mt_keywords, data.permaLink, blogDirCategoryName, blogSubCategoryName, data.title, postid);
 
             $('img').on('error', function() {
-                $(this).attr('src', "/img/tistory_404.png");
+                $(this).attr('src', "./img/tistory_404.png");
             });
 
             if (!$rootScope.$$phase) $rootScope.$apply();
