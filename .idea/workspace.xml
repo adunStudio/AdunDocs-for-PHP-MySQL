@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dde61784-1be3-4489-a15e-7a3a54448e34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/controller/ArticleController.class.php" afterPath="$PROJECT_DIR$/site/controller/ArticleController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.txt" afterPath="$PROJECT_DIR$/db.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/adundocs_SearchCtrl.js" afterPath="$PROJECT_DIR$/public/js/controllers/adundocs_SearchCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
     </list>
     <ignored path="AdunDocs-for-PHP-MySQL.iws" />
@@ -32,37 +31,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ArticleController.class.php" pinned="true" current-in-tab="false">
-        <entry file="REMOTE_DEPLOYMENT_FS://&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/site/controller/ArticleController.class.php">
+      <file leaf-file-name="adundocs.js" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/public/js/adundocs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8235292">
-              <caret line="165" column="88" selection-start-line="133" selection-start-column="8" selection-end-line="165" selection-end-column="88" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/site/controller/ArticleController.class.php">
+      <file leaf-file-name="adundocs_SearchCtrl.js" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/public/js/controllers/adundocs_SearchCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3513812">
-              <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+            <state vertical-scroll-proportion="-5.9459457">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.class.php" pinned="true" current-in-tab="false">
-        <entry file="REMOTE_DEPLOYMENT_FS://&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/lib/Model.class.php">
+      <file leaf-file-name="adundocs_SearchCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/adundocs_SearchCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8469388">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="28" />
-              <folding>
-                <marker date="0" expanded="true" signature="952:1032" placeholder="DELETE FROM ..." />
-                <marker date="0" expanded="true" signature="1449:1463" placeholder="SELECT * FRO..." />
-                <marker date="0" expanded="true" signature="2743:2757" placeholder="SELECT * FRO..." />
-                <marker date="0" expanded="true" signature="3870:3891" placeholder="SELECT COUNT..." />
-              </folding>
+            <state vertical-scroll-proportion="0.6581197">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adundocs_ViewCtrl.js" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/public/js/controllers/adundocs_ViewCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.864865">
+              <caret line="25" column="7" selection-start-line="10" selection-start-column="4" selection-end-line="25" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,6 +112,8 @@
         <option value="&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/public/sd.json" />
         <option value="&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/site/controller/ArticleController.class.php" />
         <option value="$PROJECT_DIR$/site/controller/ArticleController.class.php" />
+        <option value="&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/public/js/controllers/adundocs_SearchCtrl.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/adundocs_SearchCtrl.js" />
       </list>
     </option>
   </component>
@@ -181,7 +187,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -195,11 +201,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdunDocs-for-PHP-MySQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdunDocs-for-PHP-MySQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,8 +343,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/controller/ArticleController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3513812">
-          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.25414366">
+          <caret line="145" column="39" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/adundocs_SearchCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6581197">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
           <folding />
         </state>
       </provider>
