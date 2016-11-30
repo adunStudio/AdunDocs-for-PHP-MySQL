@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dde61784-1be3-4489-a15e-7a3a54448e34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/controller/ArticleController.class.php" afterPath="$PROJECT_DIR$/site/controller/ArticleController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.txt" afterPath="$PROJECT_DIR$/db.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
     </list>
     <ignored path="AdunDocs-for-PHP-MySQL.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,16 +32,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="db.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db.txt">
+      <file leaf-file-name="ArticleController.class.php" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/site/controller/ArticleController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8769932">
-              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+            <state vertical-scroll-proportion="-5.8235292">
+              <caret line="165" column="88" selection-start-line="133" selection-start-column="8" selection-end-line="165" selection-end-column="88" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/controller/ArticleController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3513812">
+              <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.class.php" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/lib/Model.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.8469388">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="28" />
+              <folding>
+                <marker date="0" expanded="true" signature="952:1032" placeholder="DELETE FROM ..." />
+                <marker date="0" expanded="true" signature="1449:1463" placeholder="SELECT * FRO..." />
+                <marker date="0" expanded="true" signature="2743:2757" placeholder="SELECT * FRO..." />
+                <marker date="0" expanded="true" signature="3870:3891" placeholder="SELECT COUNT..." />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -56,7 +78,6 @@
         <option value="&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/system/config/config.php" />
         <option value="&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/.htaccess" />
         <option value="&lt;169f8fee-b558-4fe0-8f26-2ff6aa218e7a&gt;/m/jmboard/bna.php" />
-        <option value="$PROJECT_DIR$/site/controller/ArticleController.class.php" />
         <option value="$PROJECT_DIR$/system/config/config.php" />
         <option value="&lt;169f8fee-b558-4fe0-8f26-2ff6aa218e7a&gt;/master/board_event_write.php" />
         <option value="&lt;169f8fee-b558-4fe0-8f26-2ff6aa218e7a&gt;/master/board_media_write.php" />
@@ -84,6 +105,9 @@
         <option value="&lt;f6f8b91a-9567-4780-b89e-5a9d790b0e32&gt;/new2015/jmboard/human_view.php" />
         <option value="&lt;f6f8b91a-9567-4780-b89e-5a9d790b0e32&gt;/m/jmboard/human_view.php" />
         <option value="$PROJECT_DIR$/db.txt" />
+        <option value="&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/public/sd.json" />
+        <option value="&lt;304c37db-127b-4f8a-8eaa-97d0b00832be&gt;/html/docs/site/controller/ArticleController.class.php" />
+        <option value="$PROJECT_DIR$/site/controller/ArticleController.class.php" />
       </list>
     </option>
   </component>
@@ -157,7 +181,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -171,11 +195,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,13 +291,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/controller/ArticleController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2260274">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -286,13 +304,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8769932">
-          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.5763098">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/controller/ArticleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3513812">
+          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

@@ -142,9 +142,10 @@ class ArticleController extends Controller {
         if ($_SESSION['master'] == $this->master && $dirName && $subName && $fileName && $fileData && $originDirName && originSubName && originFileName) {
             $oldArticle = Article::getOne(array('dirName' => $originDirName, 'subName' => $originSubName, 'fileName' => $originFileName));
             $id = $oldArticle->getId();
-            $created_date = date("Y-m-d H:i:s");
+            $created_date = $oldArticle->getBtime();
+            $modified_date = date("Y-m-d H:i:s");
 
-            if (Article::getCount(array('dirName' => $dirName, 'subName' => $subName, 'fileName' => $fileName)) > 0) {
+            if ($fileName != $originFileName && Article::getCount(array('dirName' => $dirName, 'subName' => $subName, 'fileName' => $fileName)) > 0) {
                 echo json_encode(array('result' => false, 'msg' => '존재하는 파일명입니다.'));
                 return;
             }
@@ -155,7 +156,8 @@ class ArticleController extends Controller {
             $article->setSubName($subName);
             $article->setFileName($fileName);
             $article->setFileData($fileData);
-            $article->setMtime($created_date);
+            $article->setBtime($created_date);
+            $article->setMtime($modified_date);
             $article->save();
 
             echo json_encode(array('result' => true));
